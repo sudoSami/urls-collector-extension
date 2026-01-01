@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 330px;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+      #urlList {
+        max-height: 220px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      #urlCount {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      #buttonContainer {
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        flex: 1;
+        padding: 8px;
+        margin: 0 2px;
+      }
+      #resetButton {
+        background-color: #f44336;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Collected URLs</h4>
+    <div id="urlCount">Total URLs: 0</div>
+    <div id="urlList"></div>
+    <div id="buttonContainer">
+      <button id="copyButton">Copy</button>
+      <button id="resetButton">Reset</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
