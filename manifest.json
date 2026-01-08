@@ -8,9 +8,7 @@
   },
   "permissions": [
     "storage",
-    "activeTab",
-    "clipboardRead",
-    "contextMenus"
+    "activeTab"
   ],
   "background": {
     "service_worker": "background.js"
